@@ -6,13 +6,13 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
       .mask1 {
-  max-width: 600px;
-  height: 350px;
-  overflow-y: scroll;
-  background: url(img_5terre.jpg) no-repeat;
-  -webkit-mask-image: linear-gradient(black, transparent);
-  mask-image: linear-gradient (black, transparent);
-}
+        /* max-width: 600px; */
+        min-height: 350px;
+        overflow-y: scroll;
+        background: url(img_5terre.jpg) no-repeat;
+        -webkit-mask-image: linear-gradient(black, transparent);
+        mask-image: linear-gradient (black, transparent);
+      }
     </style>
     <title>Document</title>
   </head>
@@ -223,7 +223,7 @@
           </div>
         </div>
         <div
-          class="w-[300px] h-[480px] p-4 flex flex-col justify-between bg-white"
+          class="w-[300px] min-h-[480px] p-4 flex flex-col justify-between bg-white"
         >
           <img src="images/Rectangle 4.png" alt="" />
           <h3 class="text-lg font-semibold">Чикен Сладкий Чили</h3>
@@ -236,7 +236,7 @@
           </div>
         </div>
         <div
-          class="w-[300px] h-[480px] p-4 flex flex-col justify-between bg-white"
+          class="w-[300px] min-h-[480px] p-4 flex flex-col justify-between bg-white"
         >
           <img src="images/Rectangle 4.png" alt="" />
           <h3 class="text-lg font-semibold">Чикен Сладкий Чили</h3>
@@ -249,7 +249,7 @@
           </div>
         </div>
         <div
-          class="w-[300px] h-[480px] p-4 flex flex-col justify-between bg-white"
+          class="w-[300px] min-h-[480px] p-4 flex flex-col justify-between bg-white"
         >
           <img src="images/Rectangle 4.png" alt="" />
           <h3 class="text-lg font-semibold">Чикен Сладкий Чили</h3>
@@ -264,7 +264,7 @@
       </div>
     </main>
     <main>
-      <div class="flex justify-between container m-auto mt-10">
+      <div class="flex justify-between container mx-auto mt-10">
         <h1 class="text-4xl">Суши</h1>
         <button class="flex p-4 bg-white px-8 gap-x-1">
           <i data-lucide="filter" class="my-class text-orange-500"></i>Фильтры
@@ -996,10 +996,10 @@
       </div>
     </main>
     <div
-      class="flex gap-y-4 to-blue-500 container m-auto mt-10 flex-col px-[200px]"
+      class="flex gap-y-4 w-full max-w-[850px] to-blue-500 container mx-auto mt-10 flex-col"
     >
       <h2 class="text-4xl font-semibold">Доставка пиццы в Москве</h2>
-      <div class="overflow-auto w-[100%]  mask1">
+      <div class="overflow-auto w-full mask1">
         <p>
           Захотелось чего-то вкусного и сытного? Желание простое и понятное,
           только в холодильнике все не то, и до магазина идти лень. Все пропало?
@@ -1021,28 +1021,11 @@
           доставкой уже мчится к Вам из ближайшей пиццерии Domino’s. И не
           забудьте оплатить заказ курьеру!
         </p>
-        <p>
-          Доставка пиццы от Domino’s – это когда Вам не нужно никуда ехать или
-          звонить, ведь есть Интернет. Никогда еще заказ пиццы на дом в Москве
-          не был таким простым! Чтобы заказать пиццу онлайн, Вам необходимо:
-          выбрать понравившийся вариант и количество порций; положить желаемое в
-          «Корзину»; не уходить далеко, так как вкусная пицца на заказ с
-          доставкой уже мчится к Вам из ближайшей пиццерии Domino’s. И не
-          забудьте оплатить заказ курьеру!
-        </p>
-        <p>
-          Доставка пиццы от Domino’s – это когда Вам не нужно никуда ехать или
-          звонить, ведь есть Интернет. Никогда еще заказ пиццы на дом в Москве
-          не был таким простым! Чтобы заказать пиццу онлайн, Вам необходимо:
-          выбрать понравившийся вариант и количество порций; положить желаемое в
-          «Корзину»; не уходить далеко, так как вкусная пицца на заказ с
-          доставкой уже мчится к Вам из ближайшей пиццерии Domino’s. И не
-          забудьте оплатить заказ курьеру!
-        </p>
+       
       </div>
       <h3 class="text-orange-600 font-bold">Показать полностью</h3>
     </div>
-    <footer class="flex justify-between py-8 p-[100px] m-auto mt-10 bg-white">
+    <footer class="flex justify-between py-8 p-[100px] mx-auto mt-10 bg-white">
       <div class="flex flex-col justify-between">
         <p class="flex gap-x-4">
           <i data-lucide="pizza" class="my-class text-orange-500"></i>Kuda Pitsa
